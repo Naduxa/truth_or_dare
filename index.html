@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Правда или Действие — 18+</title>
+  <link rel="stylesheet" href="./styles.css?v=1" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>🎭 Правда или Действие</h1>
+      <p class="sub">18+ • играйте по взаимному согласию</p>
+    </header>
+
+    <main id="stage">
+      <!-- Стартовый экран: две большие кнопки -->
+      <div id="choice" class="choice">
+        <button id="truthBtn" class="big truth">Правда</button>
+        <button id="dareBtn" class="big dare">Действие</button>
+      </div>
+
+      <!-- Экран карточки -->
+      <div id="cardWrap" class="card-wrap hidden">
+        <div class="card">
+          <div class="card-head" id="cardHead">вопрос для тебя</div>
+          <div class="card-body" id="cardBody">...</div>
+        </div>
+        <button id="nextBtn" class="next">Далее</button>
+      </div>
+    </main>
+
+    <footer>
+      <small>Помните о границах и уважении ❤️</small>
+    </footer>
+  </div>
+
+  <script src="./app.js?v=1"></script>
+</body>
+</html>
